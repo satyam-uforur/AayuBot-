@@ -283,7 +283,7 @@ const About = () => {
             <button className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-white bg-red-600 rounded-lg group">
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-black rounded-full group-hover:w-full group-hover:h-55"></span>
               <span className="relative font-semibold tracking-wide">
-                Try AayuBot Now
+                <a href="/"> Try AayuBot Now </a>
               </span>
             </button>
           </div>
