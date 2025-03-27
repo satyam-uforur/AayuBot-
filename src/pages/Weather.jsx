@@ -293,7 +293,7 @@ function Weather() {
           <div className="flex flex-shrink-0 items-center">
             <img src="/logo2.jpg" className="w-14 h-14" />
             <h1 className="text-xl font-bold">
-              Aayu<span className="text-red-700">Veda</span>
+              Aayu<span className="text-red-700">Bot</span>
             </h1>
           </div>
           <nav className="hidden md:block">
@@ -421,11 +421,11 @@ function Weather() {
                       {weatherData.name}, {weatherData.sys.country}
                     </p>
                   </div>
-                  {getWeatherIcon()}
+                  
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                   <div className="flex items-center gap-3">
-                    <Thermometer className="w-6 h-6 text-red-500" />
+                    
                     <div>
                       <p className="text-lg font-semibold">
                         {Math.round(weatherData.main.temp)}°C

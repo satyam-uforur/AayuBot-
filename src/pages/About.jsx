@@ -10,7 +10,7 @@ const About = () => {
           <div className="flex flex-shrink-0 items-center">
             <img src="/logo2.jpg" className="w-14 h-14" />
             <h1 className="text-xl font-bold text-black">
-              Aayu<span className="text-red-700">Veda</span>
+              Aayu<span className="text-red-700">Bot</span>
             </h1>
           </div>
           <nav className="hidden md:block">
@@ -81,7 +81,7 @@ const About = () => {
       <div className="relative py-16">
         <div className="max-w-5xl mx-auto px-6 text-center relative z-0">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-            About AayuVeda
+            About AayuBot
           </h1>
           <p className="text-xl text-gray-800 max-w-3xl mx-auto">
             Revolutionizing Healthcare with AI-Powered Medical Assistance
@@ -94,7 +94,7 @@ const About = () => {
         <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-red-500">
           <p className="text-lg text-black mb-12 leading-relaxed centre">
             In today's fast-paced world, access to accurate and reliable medical
-            information is more important than ever. AayuVeda is an advanced
+            information is more important than ever. AayuBot is an advanced
             AI-powered chatbot designed to transform the way we diagnose medical
             conditions and access essential healthcare information.
           </p>
@@ -268,10 +268,10 @@ const About = () => {
 
             <div className="bg-gradient-to-r from-red-50 to-red-200 rounded-xl p-8 mb-12 shadow-lg border border-red-500">
               <h3 className="text-2xl font-bold text-gray-700 mb-4">
-                The Future of AayuVeda
+                The Future of AayuBot
               </h3>
               <p className="text-red-600 leading-relaxed">
-                AayuVeda is continuously evolving with upcoming features
+                AayuBot is continuously evolving with upcoming features
                 including voice assistance, multilingual support, and
                 integration with wearable health devices. Our mission is to make
                 reliable healthcare information accessible to everyone.
@@ -281,9 +281,9 @@ const About = () => {
 
           <div className="text-center mt-12">
             <button className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-white bg-red-600 rounded-lg group">
-              <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-black rounded-full group-hover:w-full group-hover:h-56"></span>
+              <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-black rounded-full group-hover:w-full group-hover:h-55"></span>
               <span className="relative font-semibold tracking-wide">
-                Try AayuVeda Now
+                Try AayuBot Now
               </span>
             </button>
           </div>
@@ -293,7 +293,7 @@ const About = () => {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-800 py-8">
         <p className="text-gray-500 text-sm text-center">
-          &copy; {new Date().getFullYear()} AayuVeda All rights reserved.
+          &copy; {new Date().getFullYear()} AayuBot All rights reserved.
         </p>
       </footer>
     </div>

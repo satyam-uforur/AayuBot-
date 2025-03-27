@@ -89,6 +89,23 @@ const HospitalMap = () => {
 
     return R * c; // Distance in meters
   };
+  const locateUser = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setUserLocation({
+            lat: position.coords.latitude,
+            lon: position.coords.longitude,
+          });
+        },
+        (error) => {
+          setError("Unable to retrieve your location.");
+        }
+      );
+    } else {
+      setError("Geolocation is not supported by this browser.");
+    }
+  };
 
   return (
     <>
@@ -98,7 +115,7 @@ const HospitalMap = () => {
             <div className="flex flex-shrink-0 items-center">
               <img src="/logo2.jpg" className="w-14 h-14" />
               <h1 className="text-xl font-bold">
-                Aayu<span className="text-red-700">Veda</span>
+                Aayu<span className="text-red-700">Bot</span>
               </h1>
             </div>
             <nav className="hidden md:block">
@@ -172,6 +189,33 @@ const HospitalMap = () => {
               onSearch={searchHospitals}
               isLoading={isLoading}
             />
+          
+          <button
+  onClick={async () => {
+    if (!userLocation) {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          async (position) => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            setUserLocation({ lat, lon });
+            await searchHospitals(`${lat},${lon}`);
+          },
+          (error) => {
+            setError("Unable to retrieve your location.");
+          }
+        );
+      } else {
+        setError("Geolocation is not supported by this browser.");
+      }
+    } else {
+      await searchHospitals(`${userLocation.lat},${userLocation.lon}`);
+    }
+  }}
+  className="bg-red-600 text-white font-medium py-3 px-6 rounded transition-colors"
+>
+  Find My Location & Search Nearby Hospitals
+</button>
 
             {error && (
               <div className="w-full max-w-2xl bg-red-50 text-red-700 p-4 rounded-lg">
