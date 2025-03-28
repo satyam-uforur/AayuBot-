@@ -67,7 +67,7 @@ function News() {
           <div className="flex flex-shrink-0 items-center">
             <img src="/logo2.jpg" className="w-14 h-14" />
             <h1 className="text-xl font-bold">
-              Aayu<span className="text-red-700">Bot</span>
+              Aayu<span className="text-red-700">Veda</span>
             </h1>
           </div>
           <nav className="hidden md:block">
