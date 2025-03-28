@@ -24,7 +24,7 @@ function News() {
 
     try {
       const params = new URLSearchParams({
-        apikey: import.meta.env.VITE_NEWS_API_KEY,
+        apikey: pub_75492a720e0c213b01e68d362500fcd01c768,
         q: query,
         language: "en",
       });
